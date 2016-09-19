@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MyFirstAppforMaster</string>
+    <string name="hello_world">Hello Android!</string>
 </resources>
