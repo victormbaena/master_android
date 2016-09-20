@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.android.victorbaena.layoutstest.MainActivity"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_weight="0.16">
+
+        <TextView
+            android:id="@+id/text_type_here"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/type_here" />
+
+        <EditText
+            android:id="@+id/edit_text_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Test"
+            android:layout_below="@+id/text_type_here"
+            android:layout_alignParentStart="true"
+
+            android:layout_marginTop="12dp" />
+        <Button
+            android:id="@+id/button_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_cancel"
+            android:layout_below="@+id/edit_text_box"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/button_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_text_box"
+            android:layout_alignEnd="@id/edit_text_box"
+            android:layout_alignParentEnd="true"
+            android:text="@string/button_ok"/>
+
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/button_one"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/button_one"/>
+
+            <Button
+                android:id="@+id/button_two"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/button_two"
+                android:textSize="18dp"
+                android:textStyle="bold|italic"/>
+
+            <Button
+                android:id="@+id/button_three"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/button_three"/>
+        </TableRow>
+
+        <TableRow>
+
+            <Button />
+
+            <Button />
+
+            <Button />
+        </TableRow>
+
+        <TableRow>
+
+            <Button />
+
+            <Button />
+
+            <Button />
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>
